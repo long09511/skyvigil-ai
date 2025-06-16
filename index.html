@@ -3,80 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkyVigil AI</title>
+  <title>Vigil AI – Advanced Mini UAV Drone System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      overflow-x: hidden;
-    }
-    header {
-      padding: 20px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.5);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    .drone-container {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0f1a2d;
+      color: #e0f7fa;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 60vh;
-      perspective: 1000px;
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
-    .drone {
-      width: 200px;
-      height: 200px;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Quadcopter_Drone_Transparent.png/512px-Quadcopter_Drone_Transparent.png') no-repeat center center/contain;
-      animation: rotate 20s linear infinite;
+
+    .logo-container {
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
     }
-    @keyframes rotate {
-      from {
-        transform: rotateY(0deg);
-      }
-      to {
-        transform: rotateY(360deg);
-      }
+
+    .logo-container img {
+      width: 300px;
+      max-width: 80vw;
+      height: auto;
+      filter: drop-shadow(0 0 20px #00bcd4);
     }
+
+    h1 {
+      font-size: 3em;
+      margin: 0.3em 0 0.1em;
+      color: #00e5ff;
+    }
+
+    .subtitle {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      color: #81d4fa;
+    }
+
     .info {
       text-align: center;
-      padding: 30px;
+      font-size: 1em;
+      line-height: 1.8em;
+      max-width: 700px;
+      margin-bottom: 40px;
     }
-    .info p {
-      margin: 8px 0;
-      font-size: 1.2rem;
-    }
-    footer {
+
+    .footer {
+      font-size: 0.9em;
+      opacity: 0.7;
       text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>SkyVigil AI</h1>
-    <p>Mini UAV System for Rescue and Defense</p>
-  </header>
-
-  <div class="drone-container">
-    <div class="drone"></div>
+  <div class="logo-container">
+    <img src="vigilailogo.jpg" alt="Vigil AI Logo">
   </div>
-
+  <h1>Vigil AI</h1>
+  <div class="subtitle">Advanced Mini UAV Drone System</div>
   <div class="info">
     <p><strong>Founder:</strong> Long Dang</p>
     <p><strong>Phone:</strong> +84866418016</p>
-    <p><strong>Email:</strong> Danglongpct2009@Gmail.com</p>
+    <p><strong>Email:</strong> Danglongpct2009@gmail.com</p>
     <p><strong>Since:</strong> 2018</p>
+    <p>
+      Vigil AI là hệ thống UAV mini tiên tiến ứng dụng AI vào các lĩnh vực <strong>quốc phòng</strong>, <strong>cứu hộ</strong>, <strong>giám sát môi trường</strong> và <strong>hạ tầng dân sự</strong>. 
+      Với thiết kế tối ưu, vận hành êm ái dưới 5db, bay 24/7 bằng năng lượng mặt trời, tích hợp cảm biến, định vị GPS và khả năng xử lý thời gian thực, Vigil AI là bước đột phá về giải pháp không người lái hiện đại.
+    </p>
   </div>
-
-  <footer>
-    &copy; 2025 SkyVigil AI. All rights reserved.
-  </footer>
+  <div class="footer">
+    &copy; 2018–2025 Vigil AI. All rights reserved.
+  </div>
 </body>
 </html>
