@@ -2,52 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkyVigil AI</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .drone-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      perspective: 1000px;
+    }
+    .drone {
+      width: 200px;
+      height: 200px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Quadcopter_Drone_Transparent.png/512px-Quadcopter_Drone_Transparent.png') no-repeat center center/contain;
+      animation: rotate 20s linear infinite;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+    .info {
+      text-align: center;
+      padding: 30px;
+    }
+    .info p {
+      margin: 8px 0;
+      font-size: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.3);
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>SkyVigil AI</h1>
-    <p>UAV Mini AI Đa Nhiệm cho Cứu Hộ & Quốc Phòng</p>
+    <p>Mini UAV System for Rescue and Defense</p>
   </header>
 
-  <nav>
-    <a href="#features">Tính năng</a>
-    <a href="#team">Đội ngũ</a>
-    <a href="#contact">Liên hệ</a>
-  </nav>
+  <div class="drone-container">
+    <div class="drone"></div>
+  </div>
 
-  <section id="features">
-    <h2>🚁 Tính năng nổi bật</h2>
-    <ul>
-      <li>Camera truyền hình ảnh trực tiếp (ESP32-CAM)</li>
-      <li>Bay liên tục 24/7 với pin thay thế nhanh</li>
-      <li>Cảm biến nhiệt độ, độ ẩm, GPS (tùy chọn)</li>
-      <li>Tự động gửi vị trí cứu hộ hoặc giám sát</li>
-      <li>Tích hợp AI xử lý tín hiệu và phản hồi nhanh</li>
-    </ul>
-  </section>
-
-  <section id="team">
-    <h2>🤝 Đội ngũ phát triển</h2>
-    <p>SkyVigil AI là dự án do nhóm trẻ đam mê AI, UAV và các ứng dụng công nghệ phục vụ cộng đồng.</p>
-  </section>
-
-  <section id="contact">
-    <h2>📬 Liên hệ</h2>
-    <form>
-      <input type="text" placeholder="Tên bạn" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Tin nhắn..."></textarea>
-      <button type="submit">Gửi</button>
-    </form>
-  </section>
+  <div class="info">
+    <p><strong>Founder:</strong> Long Dang</p>
+    <p><strong>Phone:</strong> +84866418016</p>
+    <p><strong>Email:</strong> Danglongpct2009@Gmail.com</p>
+    <p><strong>Since:</strong> 2018</p>
+  </div>
 
   <footer>
-    <p>&copy; 2025 SkyVigil AI. All rights reserved.</p>
+    &copy; 2025 SkyVigil AI. All rights reserved.
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
