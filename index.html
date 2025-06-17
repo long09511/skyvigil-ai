@@ -23,18 +23,17 @@
       flex-wrap: wrap;
     }
 
-    .logo {
-      position: relative;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .logo img {
+    .logo {
       height: 60px;
     }
 
     .flag-icon {
-      position: absolute;
-      top: 0;
-      right: -25px;
       height: 24px;
       border-radius: 4px;
     }
@@ -102,8 +101,8 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="vigilailogo.jpg" alt="SkyVigil AI Logo">
+    <div class="logo-container">
+      <img class="logo" src="vigilailogo.jpg" alt="SkyVigil AI Logo">
       <img class="flag-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam Flag">
     </div>
     <nav>
@@ -121,7 +120,7 @@
     <p>
       This system is also designed for educational and civic use, helping students and engineers learn and build future-forward drone systems. With modular hardware, open API, and scalable architecture, SkyVigil AI empowers communities and organizations to solve real-world challenges through innovation.
     </p>
-    <p><em>Translation---></em> SkyVigil AI là một nền tảng UAV mini tiên tiến, phục vụ cho các nhiệm vụ trọng yếu như quốc phòng, cứu hộ thiên tai và nghiên cứu khoa học. Hệ thống tích hợp trí tuệ nhân tạo để ra quyết định theo thời gian thực, bay bằng năng lượng mặt trời 24/7, hoạt động yên tĩnh (dưới 5dB), tích hợp đầy đủ cảm biến và định vị GPS.</p>
+    <p><em>Bản dịch:</em> SkyVigil AI là một nền tảng UAV mini tiên tiến, phục vụ cho các nhiệm vụ trọng yếu như quốc phòng, cứu hộ thiên tai và nghiên cứu khoa học. Hệ thống tích hợp trí tuệ nhân tạo để ra quyết định theo thời gian thực, bay bằng năng lượng mặt trời 24/7, hoạt động yên tĩnh (dưới 5dB), tích hợp đầy đủ cảm biến và định vị GPS.</p>
     <p>Thiết bị cũng phù hợp cho giáo dục và dân sự, giúp học sinh, sinh viên và kỹ sư học hỏi và phát triển hệ thống UAV của tương lai. Với phần cứng mô-đun, API mở và kiến trúc mở rộng, SkyVigil AI mang lại khả năng giải quyết các vấn đề thực tiễn thông qua đổi mới sáng tạo.</p>
   </section>
 
