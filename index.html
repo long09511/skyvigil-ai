@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkyVigil AI – Advanced Mini UAV Drone System</title>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Anton&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -23,8 +23,20 @@
       flex-wrap: wrap;
     }
 
+    .logo {
+      position: relative;
+    }
+
     .logo img {
       height: 60px;
+    }
+
+    .flag-icon {
+      position: absolute;
+      top: 0;
+      right: -25px;
+      height: 24px;
+      border-radius: 4px;
     }
 
     nav {
@@ -61,6 +73,7 @@
       color: #00e5ff;
       font-size: 2em;
       margin-bottom: 20px;
+      font-family: 'Anton', sans-serif;
     }
 
     .profile-img {
@@ -77,6 +90,13 @@
       opacity: 0.7;
       text-align: center;
       padding: 20px;
+      position: relative;
+    }
+
+    .since-large {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -84,6 +104,7 @@
   <header>
     <div class="logo">
       <img src="vigilailogo.jpg" alt="SkyVigil AI Logo">
+      <img class="flag-icon" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam Flag">
     </div>
     <nav>
       <a onclick="showSection('home')">Home</a>
@@ -100,7 +121,7 @@
     <p>
       This system is also designed for educational and civic use, helping students and engineers learn and build future-forward drone systems. With modular hardware, open API, and scalable architecture, SkyVigil AI empowers communities and organizations to solve real-world challenges through innovation.
     </p>
-    <p><em>Bản dịch:</em> SkyVigil AI là một nền tảng UAV mini tiên tiến, phục vụ cho các nhiệm vụ trọng yếu như quốc phòng, cứu hộ thiên tai và nghiên cứu khoa học. Hệ thống tích hợp trí tuệ nhân tạo để ra quyết định theo thời gian thực, bay bằng năng lượng mặt trời 24/7, hoạt động yên tĩnh (dưới 5dB), tích hợp đầy đủ cảm biến và định vị GPS.</p>
+    <p><em>Translation---></em> SkyVigil AI là một nền tảng UAV mini tiên tiến, phục vụ cho các nhiệm vụ trọng yếu như quốc phòng, cứu hộ thiên tai và nghiên cứu khoa học. Hệ thống tích hợp trí tuệ nhân tạo để ra quyết định theo thời gian thực, bay bằng năng lượng mặt trời 24/7, hoạt động yên tĩnh (dưới 5dB), tích hợp đầy đủ cảm biến và định vị GPS.</p>
     <p>Thiết bị cũng phù hợp cho giáo dục và dân sự, giúp học sinh, sinh viên và kỹ sư học hỏi và phát triển hệ thống UAV của tương lai. Với phần cứng mô-đun, API mở và kiến trúc mở rộng, SkyVigil AI mang lại khả năng giải quyết các vấn đề thực tiễn thông qua đổi mới sáng tạo.</p>
   </section>
 
@@ -129,8 +150,7 @@
     <p>
       <strong>Founder:</strong> Long Dang<br/>
       <strong>Phone:</strong> +84866418016<br/>
-      <strong>Email:</strong> Danglongpct2009@gmail.com<br/>
-      <strong>Since:</strong> 2018
+      <strong>Email:</strong> Danglongpct2009@gmail.com
     </p>
     <p>
       SkyVigil AI was established with a mission to democratize drone and AI technology. By combining affordability, scalability, and intelligence, we aim to serve a wide range of users from rescue teams to researchers. Our team continues to innovate for a future where UAVs contribute to both safety and knowledge.
@@ -138,7 +158,8 @@
   </section>
 
   <div class="footer">
-    &copy; 2018–2025 SkyVigil AI. All rights reserved.
+    &copy; 2018–2025 SkyVigil AI. All rights reserved.<br>
+    <div class="since-large">SINCE 2018</div>
   </div>
 
   <script>
