@@ -1,86 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vigil AI – Advanced Mini UAV Drone System</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Be Vietnam Pro', sans-serif;
       background-color: #0f1a2d;
       color: #e0f7fa;
+    }
+
+    header {
+      background-color: #07111f;
+      padding: 20px;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
-      box-sizing: border-box;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
-    .logo-container {
-      margin-bottom: 30px;
-      animation: fadeIn 2s ease-in-out;
+    .logo img {
+      height: 60px;
     }
 
-    .logo-container img {
-      width: 300px;
-      max-width: 80vw;
-      height: auto;
-      filter: drop-shadow(0 0 20px #00bcd4);
+    nav {
+      display: flex;
+      gap: 20px;
     }
 
-    h1 {
-      font-size: 3em;
-      margin: 0.3em 0 0.1em;
+    nav a {
+      color: #e0f7fa;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    nav a:hover {
       color: #00e5ff;
     }
 
-    .subtitle {
-      font-size: 1.3em;
-      margin-bottom: 30px;
-      color: #81d4fa;
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      display: none;
     }
 
-    .info {
-      text-align: center;
-      font-size: 1em;
-      line-height: 1.8em;
-      max-width: 700px;
-      margin-bottom: 40px;
+    .section.active {
+      display: block;
+    }
+
+    .section h2 {
+      color: #00e5ff;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
 
     .footer {
       font-size: 0.9em;
       opacity: 0.7;
       text-align: center;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="logo-container">
-    <img src="vigilailogo.jpg" alt="Vigil AI Logo">
-  </div>
-  <h1>Vigil AI</h1>
-  <div class="subtitle">Advanced Mini UAV Drone System</div>
-  <div class="info">
-    <p><strong>Founder:</strong> Long Dang</p>
-    <p><strong>Phone:</strong> +84866418016</p>
-    <p><strong>Email:</strong> Danglongpct2009@gmail.com</p>
-    <p><strong>Since:</strong> 2018</p>
+  <header>
+    <div class="logo">
+      <img src="vigilailogo.jpg" alt="Vigil AI Logo">
+    </div>
+    <nav>
+      <a onclick="showSection('trangchu')">Trang chủ</a>
+      <a onclick="showSection('cautao')">Cấu tạo</a>
+      <a onclick="showSection('vechungtoi')">Về Vigil AI</a>
+    </nav>
+  </header>
+
+  <section class="section active" id="trangchu">
+    <h2>Vigil AI – Advanced Mini UAV Drone System</h2>
     <p>
       Vigil AI là hệ thống UAV mini tiên tiến ứng dụng AI vào các lĩnh vực <strong>quốc phòng</strong>, <strong>cứu hộ</strong>, <strong>giám sát môi trường</strong> và <strong>hạ tầng dân sự</strong>. 
       Với thiết kế tối ưu, vận hành êm ái dưới 5db, bay 24/7 bằng năng lượng mặt trời, tích hợp cảm biến, định vị GPS và khả năng xử lý thời gian thực, Vigil AI là bước đột phá về giải pháp không người lái hiện đại.
     </p>
-  </div>
+  </section>
+
+  <section class="section" id="cautao">
+    <h2>Cấu tạo & Công dụng</h2>
+    <ul>
+      <li>Khung carbon siêu nhẹ & bền</li>
+      <li>Camera ESP32-CAM tích hợp Wifi</li>
+      <li>4 động cơ không chổi than RS2205 2300KV</li>
+      <li>ESC 20A & Bộ phân phối nguồn PDB</li>
+      <li>Pin LiPo 3S & sạc nhanh</li>
+      <li>Cảm biến DHT11, GPS, và module truyền tín hiệu FS-iA6B</li>
+    </ul>
+    <p>Công dụng chính:</p>
+    <ul>
+      <li>Hỗ trợ cứu hộ khẩn cấp</li>
+      <li>Giám sát quốc phòng, biên giới</li>
+      <li>Quan trắc môi trường từ trên cao</li>
+      <li>Ứng dụng nghiên cứu, giáo dục STEM</li>
+    </ul>
+  </section>
+
+  <section class="section" id="vechungtoi">
+    <h2>Về Vigil AI</h2>
+    <p>
+      <strong>Founder:</strong> Long Dang<br/>
+      <strong>Phone:</strong> +84866418016<br/>
+      <strong>Email:</strong> Danglongpct2009@gmail.com<br/>
+      <strong>Since:</strong> 2018
+    </p>
+    <p>
+      Được thành lập với tầm nhìn đưa công nghệ UAV AI trở thành công cụ phổ cập trong quốc phòng, dân dụng và giáo dục, Vigil AI hướng tới việc phát triển thiết bị có chi phí thấp, khả năng tùy biến cao và hiệu năng thực tế vượt trội.
+    </p>
+  </section>
+
   <div class="footer">
     &copy; 2018–2025 Vigil AI. All rights reserved.
   </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
