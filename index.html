@@ -58,14 +58,16 @@
       padding: 60px 20px;
       max-width: 900px;
       margin: 0 auto;
-      display: none;
       opacity: 0;
-      transition: opacity 0.5s ease-in-out;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      display: none;
     }
 
     .section.active {
       display: block;
       opacity: 1;
+      transform: translateY(0);
     }
 
     .section h2 {
@@ -107,7 +109,10 @@
     </div>
     <nav>
       <a onclick="showSection('home')">Home</a>
-      <a onclick="showSection('structure')">Structure</a>
+      <a onclick="showSection('features')">Features</a>
+      <a onclick="showSection('solutions')">Solutions</a>
+      <a onclick="showSection('missions')">Missions</a>
+      <a onclick="showSection('technology')">Technology</a>
       <a onclick="showSection('about')">About SkyVigil AI</a>
     </nav>
   </header>
@@ -124,22 +129,39 @@
     <p>Thiết bị cũng phù hợp cho giáo dục và dân sự, giúp học sinh, sinh viên và kỹ sư học hỏi và phát triển hệ thống UAV của tương lai. Với phần cứng mô-đun, API mở và kiến trúc mở rộng, SkyVigil AI mang lại khả năng giải quyết các vấn đề thực tiễn thông qua đổi mới sáng tạo.</p>
   </section>
 
-  <section class="section" id="structure">
-    <h2>Structure & Capabilities</h2>
+  <section class="section" id="features">
+    <h2>Features</h2>
     <ul>
-      <li>Ultra-light and durable carbon fiber frame</li>
-      <li>ESP32-CAM camera with Wi-Fi integration</li>
-      <li>4 RS2205 2300KV brushless motors</li>
-      <li>20A ESCs & power distribution board (PDB)</li>
-      <li>3S LiPo battery & fast charging</li>
-      <li>DHT11 sensor, GPS module, FS-iA6B receiver</li>
+      <li>Real-time AI-powered threat detection</li>
+      <li>Autonomous navigation with GPS & sensors</li>
+      <li>Low-noise flight under 5 decibels</li>
+      <li>Solar-assisted 24/7 energy system</li>
+      <li>Customizable modules & hardware scalability</li>
     </ul>
-    <p>Main Functions:</p>
+  </section>
+
+  <section class="section" id="solutions">
+    <h2>Solutions</h2>
     <ul>
-      <li>Emergency rescue assistance</li>
-      <li>Border and national defense surveillance</li>
-      <li>High-altitude environmental monitoring</li>
-      <li>STEM education & research support</li>
+      <li>Disaster Response & Emergency Search</li>
+      <li>Border Surveillance & National Security</li>
+      <li>Scientific Research & Environmental Monitoring</li>
+      <li>STEM Education & Innovation Support</li>
+    </ul>
+  </section>
+
+  <section class="section" id="missions">
+    <h2>Missions</h2>
+    <p>At SkyVigil AI, our mission is to integrate intelligent UAV solutions into society's most critical sectors. Whether it’s assisting frontline workers during disasters, monitoring ecosystems, or supporting national security, our drones are built with a singular goal: service through innovation.</p>
+  </section>
+
+  <section class="section" id="technology">
+    <h2>Technology</h2>
+    <ul>
+      <li>Vision-based AI navigation system</li>
+      <li>Sensor fusion from multiple environmental sources</li>
+      <li>Edge computing & secure data transmission</li>
+      <li>Flexible firmware and developer-friendly API</li>
     </ul>
   </section>
 
@@ -152,7 +174,7 @@
       <strong>Email:</strong> Danglongpct2009@gmail.com
     </p>
     <p>
-      "SkyVigil AI was established with a mission to democratize drone and AI technology. By combining affordability, scalability, and intelligence, we aim to serve a wide range of users from rescue teams to researchers. Our team continues to innovate for a future where UAVs contribute to both safety and knowledge."
+      SkyVigil AI was established with a mission to democratize drone and AI technology. By combining affordability, scalability, and intelligence, we aim to serve a wide range of users from rescue teams to researchers. Our team continues to innovate for a future where UAVs contribute to both safety and knowledge.
     </p>
   </section>
 
