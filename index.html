@@ -101,14 +101,29 @@
       font-weight: bold;
       margin-top: 5px;
     }
+
+    .music-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background-color: #00e5ff;
+      color: #07111f;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <!-- Nhạc nền piano tự động chạy và lặp lại -->
- <audio autoplay loop>
-  <source src="bgmusic.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <!-- Nhạc nền piano từ file người dùng -->
+  <audio id="bg-music" loop>
+    <source src="bgmusic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button class="music-toggle" onclick="toggleMusic()">🔊 Music</button>
 
   <header>
     <div class="logo-container">
@@ -201,6 +216,19 @@
         target.classList.add('active');
         target.scrollIntoView({ behavior: 'smooth' });
       }, 100);
+    }
+
+    const music = document.getElementById('bg-music');
+    let isPlaying = false;
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        event.target.textContent = '🔇 Music';
+      } else {
+        music.play();
+        event.target.textContent = '🔊 Music';
+      }
+      isPlaying = !isPlaying;
     }
   </script>
 </body>
