@@ -48,10 +48,12 @@
       text-decoration: none;
       font-weight: 600;
       cursor: pointer;
+      transition: color 0.3s, transform 0.3s;
     }
 
     nav a:hover {
       color: #00e5ff;
+      transform: scale(1.05);
     }
 
     .section {
@@ -102,6 +104,11 @@
   </style>
 </head>
 <body>
+  <!-- Nhạc nền piano tự động chạy và lặp lại -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/15/audio_1f38e1f304.mp3?filename=soft-piano-melody-121440.mp3" type="audio/mpeg">
+  </audio>
+
   <header>
     <div class="logo-container">
       <img class="logo" src="vigilailogo.jpg" alt="SkyVigil AI Logo">
@@ -191,7 +198,8 @@
       const target = document.getElementById(id);
       setTimeout(() => {
         target.classList.add('active');
-      }, 10);
+        target.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
   </script>
 </body>
